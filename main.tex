@@ -1,15 +1,16 @@
-\documentclass[twocolumn]{jarticle}
-% import config file of layout
+\documentclass[uplatex,twocolumn]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float,nidanfloat,enumerate}
 \input{layout}
 \renewcommand{\thesection}{\Roman{section}}
+
 \begin{document}
 \title{\Huge \bf 研究計画書}
 \author{\bf yy26nnn Your name}
 \maketitle
-
 \input{src/01_background.tex}
-\input{src/02_target.tex}
-\input{src/03_how.tex}
+\input{src/02_aim.tex}
+\input{src/03_method.tex}
 \input{src/04_schedule.tex}
-\input{src/05_hope.tex}
+\input{src/05_expected_outcome.tex}
 \end{document}
