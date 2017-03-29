@@ -1,0 +1,31 @@
+\textwidth=170mm
+\textheight=265mm
+\topmargin=-25mm
+\oddsidemargin=-8.4mm
+\evensidemargin=-8.4mm
+\parindent=1em
+\columnsep=7mm
+\parskip=0mm
+
+\makeatletter
+\renewcommand{\section}{
+  \@startsection{section}
+  {1}
+  {\z@}
+  {.5\Cvs \@plus.5\Cdp \@minus.2\Cdp}
+  {.2\Cvs \@plus.3\Cdp}
+  {\reset@font\normalsize\bfseries}
+}
+\renewcommand{\subsection}{
+  \@startsection{subsection}
+  {1}
+  {\z@}
+  {.5\Cvs \@plus.5\Cdp \@minus.2\Cdp}
+  {.2\Cvs \@plus.3\Cdp}
+  {\reset@font\normalsize\bfseries}
+}
+\makeatother
+
+\usepackage[dviout]{graphicx}
+\usepackage{float,nidanfloat,enumerate}
+% \usepackage{graphicx,here}
