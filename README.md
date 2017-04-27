@@ -1,4 +1,3 @@
-OKLAB research proposal template
 -*- This branch is for windows User -*-
 ================================
 How to use
