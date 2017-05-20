@@ -1,3 +1,7 @@
 #!bin/bash
-rm *.aux *.dvi *.fdb_latexmk *.fls *.log *.pdf *.synctex.gz *.toc
+
+find . -type f -maxdepth 1 | \
+grep -e 'aux' -e 'dvi' -e 'fdb_latexmk' -e 'fls' -e 'log' -e 'pdf' -e 'synctex.gz' -e 'toc' | \
+xargs rm
+
 export TEXINPUTS='.//;'
